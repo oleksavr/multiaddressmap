@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <id name="tv_labellat"></id>
+
+
+    <id name="tv_labellon"></id>
+
+    <id name="tv_labelaltitude"></id>
+
+    <id name="tv_labelaccuracy"></id>
+    <id name="tv_labelspeed"></id>
+    <id name="tv_labelsensor"></id>
+    <id name="tv_labelupdates"></id>
+
+
+
+
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="36dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_zipcode" />
+
+    <TextView
+        android:id="@+id/lbl_addressForm"
+        android:layout_width="314dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="Addrss Form"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Address Form" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_streetNumber"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:background="#348BC34A"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_streetNumber"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_addressForm"
+        app:layout_constraintTop_toTopOf="@+id/lbl_streetNumber"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lbl_streetNumber"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Street Number"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_addressForm"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_addressForm" />
+
+    <TextView
+        android:id="@+id/tv_zipcode"
+        android:layout_width="133dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="ZIPCODE"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_cityName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cityName" />
+
+    <TextView
+        android:id="@+id/tv_streetName"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Street Name"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/lbl_streetNumber"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_streetNumber" />
+
+    <TextView
+        android:id="@+id/tv_cityName"
+        android:layout_width="133dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:text="City Name"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_streetName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_streetName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_streetName"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:background="#46AAD677"
+        app:layout_constraintEnd_toEndOf="@+id/ti_streetNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ti_streetNumber">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type street" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_cityName"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="#368BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/ti_streetName"
+        app:layout_constraintTop_toBottomOf="@+id/ti_streetName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type city" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_zipcode"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="#4B8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/ti_cityName"
+        app:layout_constraintTop_toBottomOf="@+id/ti_cityName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="type zip" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Save"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_zipcode"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/ti_zipcode"
+        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
